@@ -14,10 +14,20 @@
 <body>
       <img class="image" src="./goog.png" alt="google-logo">
 
-      <div class="input-container">
-            <!-- <i class="icon fa fa-search"></i> -->
-            <input class="search" type="text" placeholder=" Search">
-      </div>
+      <form onsubmit="event.preventDefault(); searchGoogle();">
+            <div class="input-container">
+              <input class="search" type="text" placeholder="Search Google">
+            </div>
+      </form>
+          
+      <script>
+      function searchGoogle() {
+            var query = document.querySelector('.search').value.trim();
+            if (query !== '') {
+            window.location.href = 'https://www.google.com/search?q=' + encodeURIComponent(query);
+            }
+      }
+      </script>
 
       <div class="btn">
             <button onclick="window.location.href = 'https://paper-io.com/';">Play a Game</button>
