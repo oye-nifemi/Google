@@ -11,7 +11,7 @@ input{
       width: 500px;
       height: 30px;
       display: block;
-      margin: 0 auto 30px;
+      margin: 0 auto;
       padding: 8px 25px;
       border: 1px solid #969696;
       border-radius: 50px;
@@ -29,6 +29,7 @@ input:focus {
 
 .btn{
       text-align: center;
+      margin-top: 30px;
 }
 
 button{
@@ -56,4 +57,17 @@ button:hover{
 
 .credit{
       color: blue;
+}
+
+.input-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+
+.icon{
+      display: flex;
+      color: #9b9b9b;
+      position: absolute;
+      left: 440px;
 }
